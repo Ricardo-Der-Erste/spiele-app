@@ -30,11 +30,10 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files – .env.local explizit ERLAUBT (NEXT_PUBLIC_ Keys, keine Secrets)
+# env files – .env.local & .env.production ERLAUBT (NEXT_PUBLIC_ Keys für Vercel Build)
 .env
 .env.local.example
 .env.development
-.env.production
 .env.test
 
 # vercel
