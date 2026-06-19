@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* ─── Dark-Theme Defaults & Scrollbar ─────────────────────────── */
+body {
+  background-color: #030712; /* gray-950 */
+  color: #f9fafb; /* gray-50 */
+}
+
+/* Phaser canvas: nicht versehentlich aus dem Flow reißen */
+canvas {
+  display: block;
+}
+
+/* Utility: line-clamp für ältere Browser */
+@layer utilities {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
