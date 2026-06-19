@@ -30,8 +30,12 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files – .env.local explizit ERLAUBT (NEXT_PUBLIC_ Keys, keine Secrets)
+.env
+.env.local.example
+.env.development
+.env.production
+.env.test
 
 # vercel
 .vercel
